@@ -5,7 +5,6 @@
 <head>
     <meta charset="UTF-8">
     <title>{{ my_name }} のポートフォリオ</title>
-    {% load static %}
     <link rel="stylesheet" href="{% static 'work05/style.css' %}">
 </head>
 
@@ -22,6 +21,7 @@
                 Djangoを使ったWeb開発を学習しています。<br>
                 このページは、Python経由でHTMLを表示する練習として作成しました。
             </p>
+            <img src="{% static 'work05/images/image.png' %}" alt="写真" class="profile-pic">
 
         </section>
 

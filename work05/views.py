@@ -10,7 +10,11 @@ from zoneinfo import ZoneInfo
 
 def index(request):
     datetime_now = datetime.now(ZoneInfo("Asia/Tokyo")).strftime("%Y-%m-%d %H:%M:%S")
-    return render(request, "work05/index.html", {"datetime_now": datetime_now})
+    template_values = {
+        "my_name": "Fuki N",
+        "datetime_now": datetime_now,
+    }
+    return render(request, "work05/index.html", template_values)
 
 
 def list(request):
