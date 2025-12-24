@@ -1,0 +1,32 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <title>{{ my_name }} のポートフォリオ</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'work05/style.css' %}">
+</head>
+
+<body>
+    <header class="header">
+        <p class="subtitle">Django Developer / Web Creator</p>
+    </header>
+
+    <main class="content">
+        <section class="about">
+            <h2>自己紹介</h2>
+            <p>
+                こんにちは！私は <strong>{{ my_name }}</strong> です。<br>
+                Djangoを使ったWeb開発を学習しています。<br>
+                このページは、Python経由でHTMLを表示する練習として作成しました。
+            </p>
+
+        </section>
+
+        <p>{{ datetime_now }}</p>
+
+</body>
+
+</html>

@@ -7,3 +7,6 @@
 ## サーバーの止め方
 
 controlキーを押しながらcキーを押す
+
+## 新しいアプリの追加の仕方
+python manage.py startapp work5

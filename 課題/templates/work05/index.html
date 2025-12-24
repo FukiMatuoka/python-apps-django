@@ -1,0 +1,32 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <title>課題名</title>
+</head>
+
+<body>
+    <header class="header">
+        <h1>松岡甫興の課題</h1>
+    </header>
+
+    <main class="content">
+        <section class="about">
+            <h2>課題名</h2>
+            <h3>
+                <p>
+                    課題内容<br>
+                    ┣複数ある選択肢(ボタン)を押すと、その選択肢に応じて画面(返信欄)に「がんばれ！」等表示される。<br>
+                    ┗入力欄に文字を入力したら、入力された単語を計算等して画面(返信欄)に「がんばれ！」等表示される。<br>
+                    　┗これは現実味がないかも...(でも、文字を入力する←これ自体はやってみたい。)
+                </p>
+            </h3>
+        </section>
+
+        <p>{{ datetime_now }}</p>
+
+</body>
+
+</html>
