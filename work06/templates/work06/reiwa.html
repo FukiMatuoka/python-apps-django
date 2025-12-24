@@ -1,0 +1,37 @@
+<!--令和/西暦変換ツール-->
+
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <title>令和/西暦変換ツール</title>
+    <link rel="stylesheet" href="{% static 'work06/style.css' %}">
+</head>
+
+<body>
+    <header class="header">
+        <h1>令和/西暦変換ツール</h1>
+    </header>
+    <main class="content">
+        <section class="conversion-form">
+            <h2>変換フォーム</h2>
+            <form method="post">
+                {% csrf_token %}
+                <label for="year">年を入力してください（例：令和3年、2021年）:</label>
+                <input type="text" id="year" name="year" required>
+                <button type="submit">変換</button>
+            </form>
+        </section>
+        {% if converted_year %}
+        <section class="conversion-result">
+            <h2>変換結果</h2>
+            <p>{{ original_year }} は {{ converted_year }} です。</p>
+        </section>
+        {% endif %}
+    </main>
+</body>
+
+</html>

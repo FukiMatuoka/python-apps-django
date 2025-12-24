@@ -1,0 +1,95 @@
+/* 全体リセット */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ページ全体 */
+body {
+    font-family: "Hiragino Kaku Gothic ProN", "Yu Gothic", Meiryo, sans-serif;
+    background-color: #f4f6f8;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* ヘッダー */
+.header {
+    background-color: #2c7be5;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.header h1 {
+    font-size: 28px;
+}
+
+/* メインコンテンツ */
+.content {
+    max-width: 700px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+/* セクション共通 */
+section {
+    background-color: #fff;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    margin-bottom: 30px;
+}
+
+section h2 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    border-left: 5px solid #2c7be5;
+    padding-left: 10px;
+}
+
+/* フォーム */
+.conversion-form label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.conversion-form input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 15px;
+}
+
+.conversion-form input[type="text"]:focus {
+    outline: none;
+    border-color: #2c7be5;
+}
+
+/* ボタン */
+.conversion-form button {
+    background-color: #2c7be5;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.conversion-form button:hover {
+    background-color: #1a5fc4;
+}
+
+/* 結果表示 */
+.conversion-result p {
+    font-size: 18px;
+    margin-top: 10px;
+    color: #222;
+    font-weight: bold;
+    text-align: center;
+}
